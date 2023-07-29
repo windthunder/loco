@@ -11,31 +11,31 @@
     body {
       background-color: #313338;
     }
-    #loco {
-      position: fixed;
+    .loco {
+      /* position: fixed;
       top: 200px;
       left: 0;
       right: 0;
-      margin: auto;
+      margin: auto; */
 
       animation-duration: 1.5s;
       animation-fill-mode: forwards;
       animation-timing-function: linear;
       animation-name: rotate-easeOutBounce;
     }
-    #loco:focus {
+    .loco:focus {
       animation-name: rotate-easeOutBounce2;
       animation-duration: 1.5s;
       animation-fill-mode: forwards;
       animation-timing-function: linear;
     }
 
-    #loco:hover {
+    /* #loco:hover {
       animation-name: rotate-easeOutBounce2;
       animation-duration: 1.5s;
       animation-fill-mode: forwards;
       animation-timing-function: linear;
-    }
+    } */
     @keyframes rotate-easeOutBounce {
       0% {
         transform: rotate(0deg);
@@ -121,7 +121,9 @@
   </style>
 </head>
 <body>
-  <img id="loco" src="./loco.png" alt="" srcset="" tabindex="1">
-
-
+  <div style="display: flex; justify-content: space-around; margin-top: 50px">
+    <img class="loco" src="./loco.png" alt="" srcset="" tabindex="1">
+    <img class="loco" src="./loco2.png" alt="" srcset="" tabindex="2" style="height: 48px;">
+    <img class="loco" src="./loco3.png" alt="" srcset="" tabindex="3">
+  </div>
 </body></html>
